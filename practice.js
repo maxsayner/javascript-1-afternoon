@@ -5,28 +5,33 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-//Code here
+function greeting(name) {
+  return "Hello, " + name;
+}
 
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-//Code Here
+var newGreeting = function(name) {
+  return "Hello, " + name;
+}
 
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-//Code Here
+
+ 
 
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-//Code Here
+var groceries = ["apples", "milk", "eggs", "bread"];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -34,7 +39,8 @@
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
-//Code Here
+
+
 
 //////////////////PROBLEM 5////////////////////
 
@@ -43,21 +49,28 @@
 //name (a string), color: (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var dog = {
+name: 'Ralph',
+color:'red',
+age: 34,
+goodBoy: true
+
+}
+//dog.name = devMountainClassPet;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
-//Code Here
+//dog.bark =
 
 //Store the result of invoking the bark method in a variable called ruff.
 
-//Code Here
+//var ruff = 
 
 //////////////////PROBLEM 6////////////////////
 
@@ -70,7 +83,6 @@
 
 //Return mySum.
 
-//Code Here
 
 //////////////////PROBLEM 7////////////////////
 
