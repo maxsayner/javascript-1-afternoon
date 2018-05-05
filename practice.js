@@ -23,7 +23,9 @@ var newGreeting = function(name) {
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-
+newGreeting = () => {
+  return finalGreeting;
+}
  
 
 //////////////////PROBLEM 4////////////////////
@@ -76,12 +78,12 @@ age: 34,
 goodBoy: true
 
 }
-//dog.name = devMountainClassPet;
+dog.name = devMountainClassPet;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
-//dog.bark =
+dog.bark = "Woof woof";
 
 //Store the result of invoking the bark method in a variable called ruff.
 
@@ -110,13 +112,15 @@ function math(num1, num2, callback) {
 //Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 
-//Code Here
+function add(num1,num2){
+  return num1 + num2;
+}
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
-//Code Here
-
+math(3,4,add);
+var mathSum;
 //////////////////PROBLEM 8////////////////////
 
 //Write a function called invoker that takes in one paramter, a callback function.
@@ -130,8 +134,9 @@ function sampleCallbackTwo() {
   return "I am also a callback function";
 }
 
-//Code Here
+function invoker(cb){
 
+}
 //////////////////PROBLEM 9////////////////////
 
 let duck = "cute";
@@ -170,12 +175,15 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //Create a function called outerFn which returns an anonymous
 //function which returns your name.
 
-//Code Here
+function outerFn(anonymous){
+  var anonymous = "max";
+  return anonymous;
 
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-//Code Here
-
+var innerFn = "max";
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-//Code Here
+innerFn;
+var finalResult = "";
